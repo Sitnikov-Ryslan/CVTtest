@@ -1,0 +1,33 @@
+@import "helper/vars.less";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	color: @black;
+    margin: 0;
+    background: @white;
+	
+    &.no-scroll {
+		overflow: hidden;
+	}
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+@import "helper/scrollbar.less";
+@import "blocks/container.less";
+@import "blocks/header.less";
+@import "blocks/tabs.less";
+
+
+@import "helper/hidden.less";

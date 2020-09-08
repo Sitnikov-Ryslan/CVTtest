@@ -1,0 +1,136 @@
+// main: ../style.less
+
+.header {
+    width: 100%;
+    background: @white;
+    height: 38px;
+    margin-top: 34px;
+    margin-bottom: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 182px;
+    height: 36px;
+    background: url('../img/header-logo.svg') no-repeat left center, @white;
+    padding-left: 48px;
+    padding-top: 6px;
+    margin-right: 207px;
+}
+
+.header__logo-text {
+    color: @black;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.header__search {
+    width: 402px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: @white;
+    margin-right: 276px;
+    // margin-right: 207px;
+}
+
+.header__search-input {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    height: 25px;
+    border: 0;
+    border-bottom: 1px solid @black;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    outline: 0;
+
+    &::placeholder {
+        font-family: 'Rubik', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: @gray;
+    }
+}
+
+.header__search-btn {
+    width: 50px;
+    height: 19px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: @red;
+    cursor: pointer;
+    outline: 0;
+}
+
+.header__authorization-btn {
+    width: 113px;
+    height: 38px;
+    background: @red;
+    border: 0;
+    padding: 0;
+    border-radius: 4px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: @white;
+    cursor: pointer;
+
+    &:hover {
+        background: @red-dark;
+    }
+}
+
+.header__user {
+    width: 182px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header__user-name {
+    width: 114px;
+    border: 0;
+    border-bottom: 1px solid @black;
+    padding: 0;
+    background: transparent;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    outline: 0;
+
+    &::placeholder {
+        font-family: 'Rubik', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: @gray;
+    }
+}
+
+.header__user-exit {
+    width: 52px;
+    height: 19px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: @red;
+    cursor: pointer;
+    outline: 0;
+    margin-left: 16px;
+}

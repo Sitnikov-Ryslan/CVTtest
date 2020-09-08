@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v10/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4i1UA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v10/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYi1UA.ttf) format('truetype');
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  background: #fff;
+}
+body.no-scroll {
+  overflow: hidden;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f2f2f2;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background: #bdbdbd;
+  border-radius: 2px;
+}
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  background: #fff;
+  height: 38px;
+  margin-top: 34px;
+  margin-bottom: 44px;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 182px;
+  height: 36px;
+  background: url('../img/header-logo.svg') no-repeat left center, #fff;
+  padding-left: 48px;
+  padding-top: 6px;
+  margin-right: 207px;
+}
+.header__logo-text {
+  color: #333;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.header__search {
+  width: 402px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-right: 276px;
+}
+.header__search-input {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 25px;
+  border: 0;
+  border-bottom: 1px solid #333;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  outline: 0;
+}
+.header__search-input::placeholder {
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+.header__search-btn {
+  width: 50px;
+  height: 19px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E5261E;
+  cursor: pointer;
+  outline: 0;
+}
+.header__authorization-btn {
+  width: 113px;
+  height: 38px;
+  background: #E5261E;
+  border: 0;
+  padding: 0;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.header__authorization-btn:hover {
+  background: #CC221B;
+}
+.header__user {
+  width: 182px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.header__user-name {
+  width: 114px;
+  border: 0;
+  border-bottom: 1px solid #333;
+  padding: 0;
+  background: transparent;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  outline: 0;
+}
+.header__user-name::placeholder {
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+.header__user-exit {
+  width: 52px;
+  height: 19px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E5261E;
+  cursor: pointer;
+  outline: 0;
+  margin-left: 16px;
+}
+.tabs {
+  width: 100%;
+  height: 42px;
+  background: #fff;
+  margin-bottom: 32px;
+}
+.tabs .container {
+  justify-content: center;
+}
+.tabs__item {
+  height: 33px;
+  position: relative;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: right;
+  color: #333;
+  cursor: pointer;
+  outline: 0;
+}
+.tabs__item:first-child {
+  margin-right: 24px;
+}
+.tabs__item:active {
+  color: #E5261E;
+}
+.tabs__item:active:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #E5261E;
+  left: 0;
+  bottom: -9px;
+}
+.hidden {
+  display: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
