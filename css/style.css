@@ -177,7 +177,6 @@ h6 {
   width: 100%;
   height: 42px;
   background: #fff;
-  margin-bottom: 32px;
 }
 .tabs .container {
   justify-content: center;
@@ -212,6 +211,311 @@ h6 {
   background: #E5261E;
   left: 0;
   bottom: -9px;
+}
+.content {
+  width: 100%;
+  height: 866px;
+  background: #fff;
+  padding: 32px 0 72px 0;
+}
+.content .container {
+  flex-direction: column;
+}
+.content__new {
+  width: 100%;
+  height: 478px;
+  margin-bottom: 32px;
+  background: #fff;
+}
+.content__new-title {
+  width: 134px;
+  height: 28px;
+  background: url('../img/new-title.svg') no-repeat center center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333;
+  margin-bottom: 16px;
+}
+.content__genres {
+  width: 100%;
+  height: 252px;
+  background: #fff;
+}
+.content__genres-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333;
+  margin-bottom: 16px;
+}
+.new-list {
+  width: 100%;
+  height: 434px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.new-list__item {
+  width: 280px;
+  height: 434px;
+  margin-right: 20px;
+}
+.new-list__item:last-child {
+  margin-right: 0;
+}
+.new-list__item:first-of-type .new-list__item-link {
+  background: url('../img/cat.svg') no-repeat center center;
+}
+.new-list__item:nth-of-type(2) .new-list__item-link {
+  background: url('../img/batman.svg') no-repeat center center;
+}
+.new-list__item:nth-of-type(3) .new-list__item-link {
+  background: url('../img/hollywood.svg') no-repeat center center;
+}
+.new-list__item:last-of-type .new-list__item-link {
+  background: url('../img/girl.svg') no-repeat center center;
+}
+.new-list__item-link {
+  position: relative;
+  display: block;
+  width: 280px;
+  height: 370px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.new-list__item-link:hover .new-list__item-link-content {
+  display: block;
+}
+.new-list__item-link-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  height: 370px;
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(51, 51, 51, 0.8);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #f2f2f2;
+}
+.new-list__item-text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.genres-list {
+  width: 100%;
+  height: 208px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.genres-list__item {
+  width: 280px;
+  height: 208px;
+  margin-right: 20px;
+}
+.genres-list__item:last-child {
+  margin-right: 0;
+}
+.genres-list__item:first-of-type .genres-list__item-link {
+  background: url('../img/smile-icon.svg') no-repeat center center, linear-gradient(127.83deg, rgba(242, 201, 76, 0.8) 8.44%, rgba(242, 154, 74, 0.8) 91.36%);
+}
+.genres-list__item:first-of-type .genres-list__item-link:hover {
+  background: url('../img/smile-icon.svg') no-repeat center center, linear-gradient(127.83deg, #f2c94c 8.44%, #f29a4a 91.36%);
+}
+.genres-list__item:nth-of-type(2) .genres-list__item-link {
+  background: url('../img/cry-icon.svg') no-repeat center center, linear-gradient(127.83deg, rgba(242, 153, 74, 0.8) 8.44%, rgba(235, 87, 87, 0.8) 91.36%);
+}
+.genres-list__item:nth-of-type(2) .genres-list__item-link:hover {
+  background: url('../img/cry-icon.svg') no-repeat center center, linear-gradient(127.83deg, #f2994a 8.44%, #eb5757 91.36%);
+}
+.genres-list__item:nth-of-type(3) .genres-list__item-link {
+  background: url('../img/ufo-icon.svg') no-repeat center center, linear-gradient(127.83deg, rgba(86, 204, 242, 0.8) 8.44%, rgba(47, 128, 237, 0.8) 91.36%);
+}
+.genres-list__item:nth-of-type(3) .genres-list__item-link:hover {
+  background: url('../img/ufo-icon.svg') no-repeat center center, linear-gradient(127.83deg, #56ccf2 8.44%, #2f80ed 91.36%);
+}
+.genres-list__item:last-of-type .genres-list__item-link {
+  background: url('../img/scare-icon.svg') no-repeat center center, linear-gradient(127.83deg, rgba(130, 130, 130, 0.8) 8.44%, rgba(51, 51, 51, 0.8) 91.36%);
+}
+.genres-list__item:last-of-type .genres-list__item-link:hover {
+  background: url('../img/scare-icon.svg') no-repeat center center, linear-gradient(127.83deg, #828282 8.44%, #333 91.36%);
+}
+.genres-list__item-link {
+  position: relative;
+  width: 280px;
+  height: 208px;
+  display: block;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding-top: 160px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.footer {
+  width: 100%;
+  min-height: 120px;
+  background: #f2f2f2;
+}
+.footer .container {
+  padding: 22px 0 25px 72px;
+  flex-direction: column;
+  background: url('../img/htc-logo.svg') no-repeat 0 center, #f2f2f2;
+}
+.footer__address,
+.footer__phone {
+  max-width: 940px;
+  height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 6px;
+}
+.footer__phone {
+  margin-bottom: 10px;
+}
+.footer__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #1F4766;
+}
+.modal {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.modal.show {
+  display: flex;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  width: 304px;
+  height: 394px;
+  padding: 36px;
+  background: #fff;
+  margin: auto;
+  border-radius: 8px;
+}
+.modal__title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #333;
+  margin: 0 auto 24px;
+}
+.modal__login,
+.modal__password {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 25px;
+  border: 0;
+  border-bottom: 1px solid #333;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  outline: 0;
+  margin-bottom: 24px;
+}
+.modal__login::placeholder,
+.modal__password::placeholder {
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+.modal__checkbox {
+  display: none;
+}
+.modal__checkbox:checked ~ span:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  width: 10px;
+  height: 8px;
+  background: url('../img/checkbox-checked.svg') no-repeat center center;
+}
+.modal__label {
+  width: 108px;
+  height: 19px;
+  padding-left: 24px;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333;
+  margin-bottom: 111px;
+}
+.modal__label:before {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  transform: translateY(-50%);
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+}
+.modal__label span {
+  position: relative;
+}
+.modal__submit-form {
+  width: 113px;
+  height: 38px;
+  background: #E5261E;
+  border: 0;
+  padding: 0;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.modal__submit-form:hover {
+  background: #CC221B;
 }
 .hidden {
   display: none;

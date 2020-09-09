@@ -1,0 +1,77 @@
+// main: ../style.less
+
+.new-list {
+    width: 100%;
+    height: 434px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.new-list__item {
+    width: 280px;
+    height: 434px;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:first-of-type .new-list__item-link {
+        background: url('../img/cat.svg') no-repeat center center;
+    }
+
+    &:nth-of-type(2) .new-list__item-link {
+        background: url('../img/batman.svg') no-repeat center center;
+    }
+
+    &:nth-of-type(3) .new-list__item-link {
+        background: url('../img/hollywood.svg') no-repeat center center;
+    }
+
+    &:last-of-type .new-list__item-link {
+        background: url('../img/girl.svg') no-repeat center center;
+    }
+}
+
+.new-list__item-link {
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 370px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+
+    &:hover .new-list__item-link-content {
+        display: block;
+    }
+}
+
+.new-list__item-link-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    height: 370px;
+    padding: 16px;
+    border-radius: 8px;
+    background: fade(@black, 80%);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: @gray-light;
+}
+
+.new-list__item-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: @black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.footer {
+    width: 100%;
+    min-height: 120px;
+    background: @gray-light;
+
+    & .container {
+        padding: 22px 0 25px 72px;
+        flex-direction: column;
+        background: url('../img/htc-logo.svg') no-repeat 0 center, @gray-light;
+    }
+}
+
+.footer__address,
+.footer__phone {
+    max-width: 940px;
+    height: 19px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 6px;
+}
+
+.footer__phone {
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: @htc-color;
+}

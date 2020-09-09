@@ -1,0 +1,68 @@
+// main: ../style.less
+
+.genres-list {
+    width: 100%;
+    height: 208px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.genres-list__item {
+    width: 280px;
+    height: 208px;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:first-of-type .genres-list__item-link {
+        background: url('../img/smile-icon.svg') no-repeat center center, linear-gradient(127.83deg, rgba(242, 201, 76, 0.8) 8.44%, rgba(242, 154, 74, 0.8) 91.36%);
+        
+        &:hover {
+            background: url('../img/smile-icon.svg') no-repeat center center, linear-gradient(127.83deg, rgba(242, 201, 76, 1) 8.44%, rgba(242, 154, 74, 1) 91.36%);
+        }
+    }
+
+    &:nth-of-type(2) .genres-list__item-link {
+        background: url('../img/cry-icon.svg') no-repeat center center, linear-gradient(127.83deg, rgba(242, 153, 74, 0.8) 8.44%, rgba(235, 87, 87, 0.8) 91.36%);
+        
+        &:hover {
+            background: url('../img/cry-icon.svg') no-repeat center center, linear-gradient(127.83deg, rgba(242, 153, 74, 1) 8.44%, rgba(235, 87, 87, 1) 91.36%);
+        }
+    }
+
+    &:nth-of-type(3) .genres-list__item-link {
+        background: url('../img/ufo-icon.svg') no-repeat center center, linear-gradient(127.83deg, rgba(86, 204, 242, 0.8) 8.44%, rgba(47, 128, 237, 0.8) 91.36%);
+        
+        &:hover {
+            background: url('../img/ufo-icon.svg') no-repeat center center, linear-gradient(127.83deg, rgba(86, 204, 242, 1) 8.44%, rgba(47, 128, 237, 1) 91.36%);
+        }
+    }
+
+    &:last-of-type .genres-list__item-link {
+        background: url('../img/scare-icon.svg') no-repeat center center, linear-gradient(127.83deg, fade(@gray, 80%) 8.44%, fade(@black, 80%) 91.36%);
+        
+        &:hover {
+            background: url('../img/scare-icon.svg') no-repeat center center, linear-gradient(127.83deg, @gray 8.44%, @black 91.36%);
+        }
+    }
+}
+
+.genres-list__item-link {
+    position: relative;
+    width: 280px;
+    height: 208px;
+    display: block;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding-top: 160px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: @white;
+    text-align: center;
+    text-decoration: none;
+}
