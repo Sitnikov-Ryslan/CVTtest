@@ -8,6 +8,14 @@
     & .container {
         justify-content: center;
     }
+
+    @media @notebook {
+        height: 37px;
+    }
+
+    @media @tablet {
+        height: 30px;
+    }
 }
 
 .tabs__item {
@@ -43,6 +51,25 @@
             background: @red;
             left: 0;
             bottom: -9px;
+
+            @media @notebook {
+                bottom: -4px;
+            }
+
+            @media @tablet {
+                bottom: 0;
+            }
         }
+    }
+
+    @media @notebook {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    @media @tablet {
+        height: 30px;
+        font-size: 20px;
+        line-height: 24px;
     }
 }

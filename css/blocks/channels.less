@@ -13,6 +13,16 @@
         height: 100%;
         overflow-y: auto;
     }
+
+    @media @notebook {
+        height: 768px;
+        padding-bottom: 45px;
+    }
+
+    @media @tablet {
+        height: 665px;
+        padding-bottom: 30px;
+    }
 }
 
 .channels__item {
@@ -25,19 +35,40 @@
 
     &:first-child {
         background: url('../img/first-channel.svg') no-repeat 175px center, @gray-light;
+
+        @media @tablet {
+            background: url('../img/first-channel.svg') no-repeat 75px center, @gray-light; 
+        }
     }
 
     &:nth-child(2) {
         background: url('../img/2x2.svg') no-repeat 143px center, @gray-light;
+
+        @media @tablet {
+            background: url('../img/2x2.svg') no-repeat 43px center, @gray-light;
+        }
     }
 
     &:nth-child(3) {
         background: url('../img/rbc.svg') no-repeat 172px center, @gray-light;
+
+        @media @tablet {
+            background: url('../img/rbc.svg') no-repeat 72px center, @gray-light;
+        }
     }
 
     &:last-child {
         background: url('../img/amedia.svg') no-repeat 168px center, @gray-light;
         margin-bottom: 0;
+
+        @media @tablet {
+            background: url('../img/amedia.svg') no-repeat 68px center, @gray-light;
+        }
+    }
+
+    @media @tablet {
+        height: 140px;
+        padding: 15px 20px 15px 200px;
     }
 }
 
@@ -53,4 +84,11 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @media @tablet {
+        font-size: 16px;
+        line-height: 20px;
+        height: 20px;
+        margin-bottom: 7px;
+    }
 }

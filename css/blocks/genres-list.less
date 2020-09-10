@@ -2,16 +2,20 @@
 
 .genres-list {
     width: 100%;
-    height: 208px;
+    max-height: 208px;
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
+
+    @media @notebook {
+        justify-content: space-between;
+    }
 }
 
 .genres-list__item {
     width: 280px;
-    height: 208px;
+    height: 100%;
     margin-right: 20px;
 
     &:last-child {
@@ -49,6 +53,11 @@
             background: url('../img/scare-icon.svg') no-repeat center center, linear-gradient(127.83deg, @gray 8.44%, @black 91.36%);
         }
     }
+
+    @media @notebook {
+        margin-right: 0;
+        width: 24%;
+    }
 }
 
 .genres-list__item-link {
@@ -64,4 +73,16 @@
     color: @white;
     text-align: center;
     text-decoration: none;
+
+    @media @notebook {
+        width: 100%;
+        height: 190px;
+        padding-top: 140px;
+    }
+
+    @media @tablet {
+        height: 150px;
+        padding-top: 105px;
+        font-size: 16px;
+    }
 }

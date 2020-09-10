@@ -9,13 +9,25 @@
         padding: 22px 0 25px 72px;
         flex-direction: column;
         background: url('../img/htc-logo.svg') no-repeat 0 center, @gray-light;
+
+        @media @notebook {
+            padding: 18px 0 18px 72px;
+        }
+    }
+
+    @media @notebook {
+        min-height: 107px;
+    }
+
+    @media @tablet {
+        min-height: 94px;
     }
 }
 
 .footer__address,
 .footer__phone {
     max-width: 940px;
-    height: 19px;
+    max-height: 19px;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
@@ -25,6 +37,16 @@
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 6px;
+
+    @media @notebook {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    @media @tablet {
+        font-size: 10px;
+        line-height: 14px;
+    }
 }
 
 .footer__phone {
@@ -37,4 +59,14 @@
     line-height: 19px;
     text-decoration: none;
     color: @htc-color;
+
+    @media @notebook {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    @media @tablet {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
