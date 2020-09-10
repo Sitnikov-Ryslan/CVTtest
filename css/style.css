@@ -83,6 +83,9 @@ h6 {
   background: #fff;
   margin-right: 276px;
 }
+.header__search.thin {
+  margin-right: 207px;
+}
 .header__search-input {
   margin: 0;
   padding: 0;
@@ -158,6 +161,10 @@ h6 {
   line-height: 19px;
   color: #828282;
 }
+.header__user-name.added {
+  border: 0;
+  text-align: right;
+}
 .header__user-exit {
   width: 52px;
   height: 19px;
@@ -182,6 +189,7 @@ h6 {
   justify-content: center;
 }
 .tabs__item {
+  display: block;
   height: 33px;
   position: relative;
   border: 0;
@@ -192,6 +200,7 @@ h6 {
   font-size: 28px;
   line-height: 33px;
   text-align: right;
+  text-decoration: none;
   color: #333;
   cursor: pointer;
   outline: 0;
@@ -199,10 +208,10 @@ h6 {
 .tabs__item:first-child {
   margin-right: 24px;
 }
-.tabs__item:active {
+.tabs__item.active {
   color: #E5261E;
 }
-.tabs__item:active:after {
+.tabs__item.active:after {
   display: block;
   position: absolute;
   content: "";
@@ -212,22 +221,22 @@ h6 {
   left: 0;
   bottom: -9px;
 }
-.content {
+.movies {
   width: 100%;
   height: 866px;
   background: #fff;
-  padding: 32px 0 72px 0;
+  padding: 32px 0 72px;
 }
-.content .container {
+.movies .container {
   flex-direction: column;
 }
-.content__new {
+.movies__new {
   width: 100%;
   height: 478px;
   margin-bottom: 32px;
   background: #fff;
 }
-.content__new-title {
+.movies__new-title {
   width: 134px;
   height: 28px;
   background: url('../img/new-title.svg') no-repeat center center;
@@ -237,12 +246,12 @@ h6 {
   color: #333;
   margin-bottom: 16px;
 }
-.content__genres {
+.movies__genres {
   width: 100%;
   height: 252px;
   background: #fff;
 }
-.content__genres-title {
+.movies__genres-title {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -287,7 +296,7 @@ h6 {
   overflow: hidden;
 }
 .new-list__item-link:hover .new-list__item-link-content {
-  display: block;
+  display: inline-block;
 }
 .new-list__item-link-content {
   display: none;
@@ -305,12 +314,17 @@ h6 {
   font-size: 16px;
   line-height: 140%;
   color: #f2f2f2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .new-list__item-text {
+  width: 280px;
+  max-height: 48px;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
   color: #333;
+  display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -355,7 +369,6 @@ h6 {
   background: url('../img/scare-icon.svg') no-repeat center center, linear-gradient(127.83deg, #828282 8.44%, #333 91.36%);
 }
 .genres-list__item-link {
-  position: relative;
   width: 280px;
   height: 208px;
   display: block;
@@ -368,6 +381,90 @@ h6 {
   color: #fff;
   text-align: center;
   text-decoration: none;
+}
+.channels {
+  width: 100%;
+  height: 795px;
+  background: #fff;
+  padding: 27px 0 72px;
+  margin: 0;
+  list-style: none;
+}
+.channels .container {
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+.channels__item {
+  width: 100%;
+  height: 162px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 21px 24px 19px 400px;
+}
+.channels__item:first-child {
+  background: url('../img/first-channel.svg') no-repeat 175px center, #f2f2f2;
+}
+.channels__item:nth-child(2) {
+  background: url('../img/2x2.svg') no-repeat 143px center, #f2f2f2;
+}
+.channels__item:nth-child(3) {
+  background: url('../img/rbc.svg') no-repeat 172px center, #f2f2f2;
+}
+.channels__item:last-child {
+  background: url('../img/amedia.svg') no-repeat 168px center, #f2f2f2;
+  margin-bottom: 0;
+}
+.channels__item-title {
+  max-width: 280px;
+  height: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 14px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.program-list {
+  width: 100%;
+  height: 81px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.program-list__item {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 19px;
+  margin-bottom: 12px;
+  font-weight: normal;
+  font-size: 16px;
+  color: #333;
+}
+.program-list__item:last-child {
+  margin-bottom: 0;
+}
+.program-list__item.active {
+  color: #E5261E;
+}
+.program-list__time {
+  display: inline-block;
+  width: 46px;
+  height: 19px;
+  margin-right: 16px;
+}
+.program-list__name {
+  max-width: 694px;
+  height: 19px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .footer {
   width: 100%;
@@ -383,6 +480,8 @@ h6 {
 .footer__phone {
   max-width: 940px;
   height: 19px;
+  display: inline-block;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-style: normal;
@@ -417,6 +516,7 @@ h6 {
 }
 .modal__form {
   display: flex;
+  position: relative;
   flex-direction: column;
   width: 304px;
   height: 394px;

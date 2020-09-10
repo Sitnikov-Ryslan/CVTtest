@@ -11,6 +11,7 @@
 }
 
 .tabs__item {
+    display: block;
     height: 33px;
     position: relative;
     border: 0;
@@ -21,6 +22,7 @@
     font-size: 28px;
     line-height: 33px;
     text-align: right;
+    text-decoration: none;
     color: @black;
     cursor: pointer;
     outline: 0;
@@ -29,7 +31,7 @@
         margin-right: 24px;
     }
 
-    &:active {
+    &.active {
         color: @red;
 
         &:after {
