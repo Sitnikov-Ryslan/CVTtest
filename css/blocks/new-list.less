@@ -11,6 +11,11 @@
     @media @notebook {
         justify-content: space-between;
     }
+
+    @media @mobile {
+        flex-wrap: wrap;
+        max-height: 900px;
+    }
 }
 
 .new-list__item {
@@ -42,6 +47,11 @@
         width: 24%;
         margin-right: 0;
         height: auto;
+    }
+
+    @media @mobile {
+        width: 48%;
+        margin-bottom: 10px;
     }
 }
 
