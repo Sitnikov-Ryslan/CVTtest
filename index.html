@@ -33,7 +33,7 @@
     <article class="movies" id="movies">
         <div class="container">
             <section class="movies__new">
-                <h1 class="movies__new-title">&#x1F525 Новинки</h1>
+                <h1 class="movies__new-title">&#x1F525; Новинки</h1>
                 <ul class="new-list">
                     <li class="new-list__item">
                         <a href="#" class="new-list__item-link">
@@ -101,78 +101,83 @@
         </div>
     </article>
 
-    <ul class="channels hidden" id="channels">
+    <article class="channels hidden" id="channels">    
         <div class="container">
-            <li class="channels__item">
-                <h2 class="channels__item-title">Первый канал</h2>
-                <ul class="program-list">
-                    <li class="program-list__item active">
-                        <time class="program-list__time">13:00</time>
-                        <span class="program-list__name">Новости (с субтитрами)</span>
-                    </li>
-                    <li class="program-list__item">
-                        <time class="program-list__time">14:00</time>
-                        <span class="program-list__name">Давай поженимся</span>
-                    </li>
-                    <li class="program-list__item">
-                        <time class="program-list__time">15:00</time>
-                        <span class="program-list__name">Другие новости</span>
-                    </li>
-                </ul>
-            </li>
-            <li class="channels__item">
-                <h2 class="channels__item-title">2x2</h2>
-                <ul class="program-list">
-                    <li class="program-list__item active">
-                        <time class="program-list__time">13:00</time>
-                        <span class="program-list__name">МУЛЬТ ТВ. Сезон 4, 7 серия</span>
-                    </li>
-                    <li class="program-list__item">
-                        <time class="program-list__time">14:00</time>
-                        <span class="program-list__name">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</span>
-                    </li>
-                    <li class="program-list__item">
-                        <time class="program-list__time">15:00</time>
-                        <span class="program-list__name">БУРДАШЕВ. Сезон 1, 20 серия</span>
-                    </li>
-                </ul>
-            </li>
-            <li class="channels__item">
-                <h2 class="channels__item-title">РБК</h2>
-                <ul class="program-list">
-                    <li class="program-list__item active">
-                        <time class="program-list__time">13:00</time>
-                        <span class="program-list__name">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</span>
-                    </li>
-                    <li class="program-list__item">
-                        <time class="program-list__time">14:00</time>
-                        <span class="program-list__name">ДЕНЬ. Главные темы</span>
-                    </li>
-                    <li class="program-list__item">
-                        <time class="program-list__time">15:00</time>
-                        <span class="program-list__name">Главные новости</span>
-                    </li>
-                </ul>
-            </li>
-            <li class="channels__item">
-                <h2 class="channels__item-title">AMEDIA PREMIUM</h2>
-                <ul class="program-list">
-                    <li class="program-list__item active">
-                        <time class="program-list__time">13:00</time>
-                        <span class="program-list__name">Клиент всегда мёртв</span>
-                    </li>
-                    <li class="program-list__item">
-                        <time class="program-list__time">14:00</time>
-                        <span class="program-list__name">Голодные игры: Сойка-пересмешница. Часть I</span>
-                    </li>
-                    <li class="program-list__item">
-                        <time class="program-list__time">15:00</time>
-                        <span class="program-list__name">Секс в большом городе</span>
-                    </li>
-                </ul>
-            </li>
+            <ul class="channels__list">
+                
+                <li class="channels__item channels__item_first">
+                    <h2 class="channels__item-title">Первый канал</h2>
+                    <ul class="program-list">
+                        <li class="program-list__item active">
+                            <time class="program-list__time">13:00</time>
+                            <span class="program-list__name">Новости (с субтитрами)</span>
+                        </li>
+                        <li class="program-list__item">
+                            <time class="program-list__time">14:00</time>
+                            <span class="program-list__name">Давай поженимся</span>
+                        </li>
+                        <li class="program-list__item">
+                            <time class="program-list__time">15:00</time>
+                            <span class="program-list__name">Другие новости</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="channels__item channels__item_2x2">
+                    <h2 class="channels__item-title">2x2</h2>
+                    <ul class="program-list">
+                        <li class="program-list__item active">
+                            <time class="program-list__time">13:00</time>
+                            <span class="program-list__name">МУЛЬТ ТВ. Сезон 4, 7 серия</span>
+                        </li>
+                        <li class="program-list__item">
+                            <time class="program-list__time">14:00</time>
+                            <span class="program-list__name">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</span>
+                        </li>
+                        <li class="program-list__item">
+                            <time class="program-list__time">15:00</time>
+                            <span class="program-list__name">БУРДАШЕВ. Сезон 1, 20 серия</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="channels__item channels__item_rbc">
+                    <h2 class="channels__item-title">РБК</h2>
+                    <ul class="program-list">
+                        <li class="program-list__item active">
+                            <time class="program-list__time">13:00</time>
+                            <span class="program-list__name">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</span>
+                        </li>
+                        <li class="program-list__item">
+                            <time class="program-list__time">14:00</time>
+                            <span class="program-list__name">ДЕНЬ. Главные темы</span>
+                        </li>
+                        <li class="program-list__item">
+                            <time class="program-list__time">15:00</time>
+                            <span class="program-list__name">Главные новости</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="channels__item channels__item_amedia">
+                    <h2 class="channels__item-title">AMEDIA PREMIUM</h2>
+                    <ul class="program-list">
+                        <li class="program-list__item active">
+                            <time class="program-list__time">13:00</time>
+                            <span class="program-list__name">Клиент всегда мёртв</span>
+                        </li>
+                        <li class="program-list__item">
+                            <time class="program-list__time">14:00</time>
+                            <span class="program-list__name">Голодные игры: Сойка-пересмешница. Часть I</span>
+                        </li>
+                        <li class="program-list__item">
+                            <time class="program-list__time">15:00</time>
+                            <span class="program-list__name">Секс в большом городе</span>
+                        </li>
+                    </ul>
+                </li>
+
+                
+            </ul>
         </div>
-    </ul>
+    </article>
 
     <footer class="footer">
         <div class="container">

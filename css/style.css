@@ -623,13 +623,9 @@ h6 {
   height: 795px;
   background: #fff;
   padding: 27px 0 72px;
-  margin: 0;
-  list-style: none;
 }
 .channels .container {
-  flex-direction: column;
   height: 100%;
-  overflow-y: auto;
 }
 @media (max-width: 1199px) {
   .channels {
@@ -643,6 +639,15 @@ h6 {
     padding-bottom: 30px;
   }
 }
+.channels__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
 .channels__item {
   width: 100%;
   height: 162px;
@@ -651,56 +656,56 @@ h6 {
   margin-bottom: 16px;
   padding: 21px 24px 19px 400px;
 }
-.channels__item:first-child {
+.channels__item_first {
   background: url('../img/first-channel.svg') no-repeat 175px center, #f2f2f2;
 }
 @media (max-width: 991px) {
-  .channels__item:first-child {
+  .channels__item_first {
     background: url('../img/first-channel.svg') no-repeat 75px center, #f2f2f2;
   }
 }
 @media (max-width: 767px) {
-  .channels__item:first-child {
+  .channels__item_first {
     background: #f2f2f2;
   }
 }
-.channels__item:nth-child(2) {
+.channels__item_2x2 {
   background: url('../img/2x2.svg') no-repeat 143px center, #f2f2f2;
 }
 @media (max-width: 991px) {
-  .channels__item:nth-child(2) {
+  .channels__item_2x2 {
     background: url('../img/2x2.svg') no-repeat 43px center, #f2f2f2;
   }
 }
 @media (max-width: 767px) {
-  .channels__item:nth-child(2) {
+  .channels__item_2x2 {
     background: #f2f2f2;
   }
 }
-.channels__item:nth-child(3) {
+.channels__item_rbc {
   background: url('../img/rbc.svg') no-repeat 172px center, #f2f2f2;
 }
 @media (max-width: 991px) {
-  .channels__item:nth-child(3) {
+  .channels__item_rbc {
     background: url('../img/rbc.svg') no-repeat 72px center, #f2f2f2;
   }
 }
 @media (max-width: 767px) {
-  .channels__item:nth-child(3) {
+  .channels__item_rbc {
     background: #f2f2f2;
   }
 }
-.channels__item:last-child {
+.channels__item_amedia {
   background: url('../img/amedia.svg') no-repeat 168px center, #f2f2f2;
   margin-bottom: 0;
 }
 @media (max-width: 991px) {
-  .channels__item:last-child {
+  .channels__item_amedia {
     background: url('../img/amedia.svg') no-repeat 68px center, #f2f2f2;
   }
 }
 @media (max-width: 767px) {
-  .channels__item:last-child {
+  .channels__item_amedia {
     background: #f2f2f2;
   }
 }
