@@ -4,10 +4,11 @@ const tabs = document.querySelectorAll('.tabs__item');
 const movies = document.querySelector('.movies');
 const channels = document.querySelector('.channels');
 
+
 tabs.forEach((item) => {
     item.addEventListener('click', function(e) {
         e.preventDefault();
-
+        
         tabs.forEach((elem) => {
             elem.classList.remove('active');
         })
@@ -15,7 +16,13 @@ tabs.forEach((item) => {
         channels.classList.add('hidden');
 
         item.classList.add('active');
-        let contentBlock = document.querySelector(`${item.getAttribute('href')}`).classList.remove('hidden');
+
+        let showBlock = function() {
+            let contentBlock = document.querySelector(`${item.getAttribute('href')}`);
+            contentBlock.classList.remove('hidden');
+        }
+
+        showBlock();
     })
 });
 
@@ -88,6 +95,29 @@ let addName = function() {
     }
 };
 
+let checkEnterInputs = function(ev) {
+    if (modalLogin.value.trim() !== '' && modalPass.value.trim() !== '') {
+        sessionStorage.setItem(`${modalLogin.name}`, `${modalLogin.value}`);
+        sessionStorage.setItem(`${modalPass.name}`, `${modalPass.value}`);
+       
+        if (sessionStorage.getItem(`${userName.name}`) !== null) {
+            userName.value = sessionStorage.getItem(`${userName.name}`);
+            userName.classList.add('added');
+        } else {
+            userName.classList.remove('added');
+        }
+
+        closeModal(ev);
+        autBtn.classList.add('hidden');
+        user.classList.remove('hidden');
+        search.classList.add('thin');
+
+        userName.addEventListener('change', addName);
+    } else {
+        ev.preventDefault();
+    }
+}
+
 modalForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -109,24 +139,22 @@ modalForm.addEventListener('submit', function(event) {
 
         postResponse();
     } else {
-        sessionStorage.setItem(`${modalLogin.name}`, `${modalLogin.value}`);
-        sessionStorage.setItem(`${modalPass.name}`, `${modalPass.value}`);
-    
-        if (sessionStorage.getItem(`${userName.name}`) !== null) {
-            userName.value = sessionStorage.getItem(`${userName.name}`);
-            userName.classList.add('added');
-        } else {
-            userName.classList.remove('added');
-        }
+        checkEnterInputs(event);
+    }
+});
 
-        closeModal(event);
+// Check user enter
+
+document.addEventListener('DOMContentLoaded', (ev) => {
+    if (sessionStorage.getItem(`${modalLogin.name}`) !== null) {
+        closeModal(ev);
         autBtn.classList.add('hidden');
         user.classList.remove('hidden');
         search.classList.add('thin');
 
         userName.addEventListener('change', addName);
     }
-});
+})
 
 // Exit user
 
